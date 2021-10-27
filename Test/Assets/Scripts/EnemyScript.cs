@@ -10,13 +10,13 @@ public class EnemyScript : MonoBehaviour
 
     void Update()
     {
-        speed = GameController.instance.enemySpeed;
+        speed = GameController.instance.enemySpeed; //getting the speed value for enemy from GameController 
 
         if (ball == null)
         {
-            ball = GameController.instance.FindBall();
+            ball = GameController.instance.FindBall(); //finding a new ball in case the previous one was destroyed
         }
-        else
+        else                                           //moving the enemy towards the ball but only at z axis 
         {
             enemyDirection = ball.transform.position - transform.position;
             enemyDirection = enemyDirection.normalized;

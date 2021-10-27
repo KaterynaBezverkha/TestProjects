@@ -303,7 +303,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.23f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.23f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.23f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
--r:"C:/Users/Kate/UnityProjects/Test/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/Kate/UnityProjects/TestProjects/Test/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.Rider.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.TextMeshPro.Editor.ref.dll"
@@ -324,7 +324,11 @@
 "Assets/Scripts/ArrowController.cs"
 "Assets/Scripts/ArrowVariables.cs"
 "Assets/Scripts/BallScript.cs"
+"Assets/Scripts/BlocksScript.cs"
+"Assets/Scripts/EnemyScript.cs"
+"Assets/Scripts/GameController.cs"
 "Assets/Scripts/InputDetection.cs"
+"Assets/Scripts/UIController.cs"
 -langversion:8.0
 
 /deterministic

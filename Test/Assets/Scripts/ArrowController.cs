@@ -5,21 +5,21 @@ using UnityEngine;
 public class ArrowController : MonoBehaviour
 {
     private LineRenderer lr;
-    private Transform[] points;
+    private Transform[] points; //objects between which arrow will appear (ball and cube)
 
     private void Awake()
     {
         lr = GetComponent<LineRenderer>();
-        lr.enabled = false;
+        lr.enabled = false; //disable arrow at start
     }
 
-    public void SetUpLine(Transform[] points)
+    public void SetUpLine(Transform[] points) //drawing the line with an arrow sprite on it
     {
         lr.positionCount = points.Length;
         this.points = points;
     }
 
-    private void Update()
+    private void Update()   //update position of line (arrow)
     {
         if (points[0] != null)
         {

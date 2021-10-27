@@ -24,13 +24,13 @@ public class BallScript : MonoBehaviour
     private void Start()
     {
         player = GameObject.Find("Player");
-        Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>());
+        Physics.IgnoreCollision(player.GetComponent<Collider>(), GetComponent<Collider>()); //ignore collision between the cube and the ball
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isBallThrown)
+        if (!isBallThrown) //calculating the distance between the cube and the ball
         {
             Vector3 playerPos = player.transform.position;
             Vector3 ballPos = transform.position;
@@ -40,14 +40,14 @@ public class BallScript : MonoBehaviour
         }
     }
 
-    public void ThrowBall()
+    public void ThrowBall() //making the ball move
     {
         rb.AddForce(direction * magnitude);
         rb.velocity = direction * magnitude;
         isBallThrown = true;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) //destroy the ball in case of collisions
     {
         if (collision.gameObject.tag == "Enemy")
         {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ArrowVariables : MonoBehaviour
 {
-    [SerializeField] private Transform[] points;
+    [SerializeField] private Transform[] points; 
     [SerializeField] private ArrowController line;
 
     private void Start()

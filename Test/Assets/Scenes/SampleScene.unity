@@ -1763,7 +1763,7 @@ MonoBehaviour:
   ballPref: {fileID: 4173024999145562143, guid: 31e71bb390ad6be4f99e5eea01c77b76, type: 3}
   blocksPref: {fileID: 317380869874707919, guid: c2c1c8460df7fbc4e9631aea0410821d, type: 3}
   level: 1
-  enemySpeed: 0.01
+  enemySpeed: 0.002
 --- !u!4 &1567583463
 Transform:
   m_ObjectHideFlags: 0

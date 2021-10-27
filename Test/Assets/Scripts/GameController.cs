@@ -12,8 +12,8 @@ public class GameController : MonoBehaviour
     GameObject ball = null;
     GameObject blocks = null;
 
-    public int level = 1;
-    public float enemySpeed = 0.002f;
+    public int level = 1; //level at start
+    public float enemySpeed = 0.002f; //enemy speed at start
 
 
 
@@ -28,8 +28,8 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FindBall();
-        FindBlocks();
+        FindBall(); //finding the first ball on scene
+        FindBlocks(); //finding the first blocks on scene
     }
 
     // Update is called once per frame
@@ -37,15 +37,15 @@ public class GameController : MonoBehaviour
     {
         if (ball == null)
         {
-            Instantiate<GameObject>(ballPref);
+            Instantiate<GameObject>(ballPref); //creating a new ball in case the previous one was destroyed
             FindBall();
         }
 
-        if (blocks == null)
+        if (blocks == null) //creating a new blocks and increasing level/enemy speed
         {
             level++;
-            enemySpeed += 0.004f;
-            UIController.instance.levelText.text = "Level: " + level;
+            enemySpeed += 0.003f;
+            UIController.instance.levelText.text = "Level: " + level; //putting a new level value into the UI
 
             Instantiate<GameObject>(blocksPref);
             FindBlocks();
